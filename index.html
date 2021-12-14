@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        function Vector(x,y,z){
+            this.x = x;
+            this.y = y;
+            this.z = z;
+            
+            this.getLength = function(){
+                var temp = 0;
+                temp = (x*x) + (y*y) + (z*z);
+                temp = Math.sqrt(temp);
+                alert("Длина вектора - " + temp);
+            }
+        }
+
+        var x = prompt("Введите x");
+        var y = prompt("Введите Y");
+        var z = prompt("Введите z");
+
+        var vector = new Vector(x,y,z);
+        vector.getLength();
+    </script>
+</body>
+</html>
